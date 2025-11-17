@@ -1,0 +1,38 @@
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 350px;
+    background-color: #c9b5e8;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    color: #403060;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.card h1 {
+    font-size: 32px;
+    margin: 0;
+}
