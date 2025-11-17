@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.sub {
+    color: #666;
+    margin: 4px 0 10px 0;
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.rating {
+    background: #388e3c;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.reviews {
+    color: #666;
+    font-size: 14px;
+}
+
+.assured {
+    width: 55px;
+    height: auto;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 14px;
+}
+
+.offer {
+    color: #388e3c;
+    font-size: 14px;
+}
+
+.bank-offer {
+    color: #008000;
+    font-size: 15px;
+    margin-top: 5px;
+}
