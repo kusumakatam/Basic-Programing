@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katam Kusuma | Portfolio</title>
+    
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Katam Kusuma | Portfolio" />
+    <meta property="og:description" content="Portfolio of Katam Kusuma - Cloud and Software Engineer" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Katam Kusuma | Portfolio" />
+    <meta name="twitter:description" content="Portfolio of Katam Kusuma - Cloud and Software Engineer" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container flex items-center justify-between">
+            <div class="logo">
+                KATAM<span class="text-primary"> KUSUMA</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn-primary">Hire Me</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+                <!-- Menu Icon SVG -->
+                <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+                <!-- Close Icon SVG (Hidden by default) -->
+                <svg id="close-icon" style="display:none;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#home" class="mobile-link" onclick="toggleMenu()">Home</a>
+            <a href="#about" class="mobile-link" onclick="toggleMenu()">About</a>
+            <a href="#skills" class="mobile-link" onclick="toggleMenu()">Skills</a>
+            <a href="#contact" class="mobile-link" onclick="toggleMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" alt="Abstract Background">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="badge">
+                Available for Cloud & Software Roles
+            </div>
+            <h1 class="hero-title">
+                Cloud & Software <br />
+                <span class="gradient-text">Engineer</span>
+            </h1>
+            <p class="hero-desc">
+                Adaptable professional with solid skills in programming (Java, Python), networking, and cloud technologies (AWS, GCP).
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary btn-large" style="text-align:center; display:inline-block; width:fit-content;">Contact Me</a>
+                <a href="#skills" class="btn-outline" style="text-align:center; display:inline-block; width:fit-content;">View Skills</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-bg">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                    <p class="text-relaxed">
+                        I am a final year Computer Science student at Swarnandhra College of Engineering and Technology with a 9.27 CGPA. I combine a strong foundation in software development with practical expertise in cloud infrastructure and networking.
+                    </p>
+                    <p class="text-relaxed">
+                        My goal is to join a dynamic organization where I can enhance cloud infrastructure, improve network performance, and develop efficient software solutions using my skills in Java, Python, and AWS/GCP.
+                    </p>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg> 
+                            Education
+                        </h3>
+                        <div style="border-left: 2px solid var(--border); padding-left: 1rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <div>
+                                <h4 style="color: var(--foreground);">B.Tech in Computer Science</h4>
+                                <p style="font-size: 0.875rem; color: var(--muted-foreground);">Swarnandhra College of Engineering & Technology</p>
+                                <p style="font-size: 0.875rem; color: var(--primary);">9.27 CGPA • 2025</p>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--foreground);">Intermediate (MPC)</h4>
+                                <p style="font-size: 0.875rem; color: var(--muted-foreground);">NRI Junior College</p>
+                                <p style="font-size: 0.875rem; color: var(--primary);">95.1% • 2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                            Certifications
+                        </h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span style="padding: 0.25rem 0.75rem; background: var(--secondary); border-radius: 9999px; font-size: 0.75rem; border: 1px solid var(--border);">AWS Cloud Foundations</span>
+                            <span style="padding: 0.25rem 0.75rem; background: var(--secondary); border-radius: 9999px; font-size: 0.75rem; border: 1px solid var(--border);">Palo Alto Cybersecurity</span>
+                            <span style="padding: 0.25rem 0.75rem; background: var(--secondary); border-radius: 9999px; font-size: 0.75rem; border: 1px solid var(--border);">Google AI-ML</span>
+                            <span style="padding: 0.25rem 0.75rem; background: var(--secondary); border-radius: 9999px; font-size: 0.75rem; border: 1px solid var(--border);">AWS Data Engineering</span>
+                            <span style="padding: 0.25rem 0.75rem; background: var(--secondary); border-radius: 9999px; font-size: 0.75rem; border: 1px solid var(--border);">Java Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: sticky; top: 6rem;">
+                    <div class="info-card">
+                        <div style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem;">
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #ef4444;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #eab308;"></div>
+                            <div style="width: 12px; height: 12px; border-radius: 50%; background: #22c55e;"></div>
+                        </div>
+                        <div style="color: var(--muted-foreground); line-height: 1.8;">
+                            <p><span class="text-primary">const</span> <span class="code-val">engineer</span> = {</p>
+                            <p style="padding-left: 1.5rem;">name: <span class="code-key">'Katam Kusuma'</span>,</p>
+                            <p style="padding-left: 1.5rem;">role: <span class="code-key">'Cloud & Software Engineer'</span>,</p>
+                            <p style="padding-left: 1.5rem;">skills: <span class="code-str">['Java', 'Python', 'AWS', 'GCP']</span>,</p>
+                            <p style="padding-left: 1.5rem;">network: <span class="code-key">'TCP/IP, OSI, Routing'</span>,</p>
+                            <p style="padding-left: 1.5rem;">hirable: <span class="text-primary">true</span></p>
+                            <p>};</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-card">
+        <div class="container">
+            <div style="text-align: center; max-width: 42rem; margin: 0 auto 4rem auto;">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="text-relaxed">A robust set of technologies for full-stack development and cloud engineering.</p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Skill Item: Languages -->
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Languages</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Java, Python, SQL, JavaScript</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <!-- Skill Item: Cloud -->
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Cloud Platforms</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">AWS (Foundations), GCP</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+                <!-- Skill Item: Networking -->
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Networking</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">TCP/IP, OSI, Routing, DNS, DHCP</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <!-- Skill Item: Web -->
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Web Development</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">React, Node.js, HTML5, CSS3, JSP</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <!-- Skill Item: Data Science -->
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Data Science/ML</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Scikit-learn, Data Preprocessing</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+                <!-- Skill Item: Tools -->
+                 <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Tools</h3>
+                    <p style="font-size: 0.875rem; color: var(--muted-foreground); margin-bottom: 1rem;">Git, Eclipse, Microsoft Excel</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-bg">
+        <div class="container">
+            <div class="contact-card">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="text-relaxed" style="max-width: 36rem; margin: 0 auto 2rem auto;">
+                    I'm looking to join a dynamic organization. Feel free to reach out for opportunities or collaborations.
+                </p>
+                
+                <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center;">
+                    <a href="mailto:kusuma.katam2004@gmail.com" class="contact-btn contact-btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        kusuma.katam2004@gmail.com
+                    </a>
+                    <a href="tel:+917416514519" class="contact-btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        +91 7416514519
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2.7-5-2.7"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Katam Kusuma. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Built with HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobile-menu');
+            var menuIcon = document.getElementById('menu-icon');
+            var closeIcon = document.getElementById('close-icon');
+            
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+                menu.classList.remove('open');
+                menuIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+                menu.classList.add('open');
+                menuIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

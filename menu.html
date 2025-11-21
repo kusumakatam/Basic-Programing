@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Coffee Menu</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #faf7f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 12px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+      .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .menu-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Our Coffee Menu</h1>
+
+  <div class="menu-container">
+    <div class="card">
+      <img src="https://img.freepik.com/premium-photo/fresh-espresso-shot-with-coffee-beans-rustic-mat_1218330-1265.jpg" alt="Espresso">
+      <h3>Espresso</h3>
+      <p>Strong and bold single shot coffee.</p>
+      <div class="price">₹120</div>
+    </div>
+
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.ij91XQ_rq8ZDpG4ylD_JKwHaEo?pid=Api&P=0&h=180" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <p>Classic Italian coffee with milk foam.</p>
+      <div class="price">₹160</div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.freepik.com/premium-photo/coffee-latte_920207-2417.jpg" alt="Latte">
+      <h3>Latte</h3>
+      <p>Smooth blend of milk and espresso.</p>
+      <div class="price">₹180</div>
+    </div>
+
+    <div class="card">
+      <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/0a6773489377ac573bc3272f7542f928.jpg" alt="Mocha">
+      <h3>Mocha</h3>
+      <p>Coffee with chocolate flavor.</p>
+      <div class="price">₹200</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=800" alt="Cold Brew">
+      <h3>Cold Brew</h3>
+      <p>Brewed slowly for a smooth taste.</p>
+      <div class="price">₹150</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1481391032119-d89fee407e44?w=800" alt="Americano">
+      <h3>Americano</h3>
+      <p>Hot water mixed with espresso.</p>
+      <div class="price">₹110</div>
+    </div>
+  </div>
+
+</body>
+</html>
